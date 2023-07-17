@@ -8,8 +8,8 @@ on:
 jobs:
   build-and-test-workflow:
     name: B&T
-    runs-on: [self-hosted, macOS]
+    runs-on: [self-hosted, macOS, macos13]
     steps:
     - uses: actions/checkout@v3.5.3
-    - name: Swift Package Smoke Test
-      run: swift run -c release SmokeTest
+    - name: Run build_and_test.sh
+      run: scripts/build_and_test.sh
