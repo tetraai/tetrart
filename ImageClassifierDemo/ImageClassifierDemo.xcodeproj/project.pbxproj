@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FF30BE52A65E9FF00072D57 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1FF30BE42A65E9FF00072D57 /* main.mm */; };
+		1FF30BEF2A65EA5D00072D57 /* TetraRT in Frameworks */ = {isa = PBXBuildFile; productRef = 1FF30BEE2A65EA5D00072D57 /* TetraRT */; };
+		1FF30BF22A65EAA200072D57 /* RgbImageTensor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1FF30BF02A65EAA200072D57 /* RgbImageTensor.mm */; };
+		1FF30BF52A65EDF300072D57 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF30BF42A65EDF300072D57 /* CoreML.framework */; };
+		1FF30BF72A6707A000072D57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF30BF62A6707A000072D57 /* CoreGraphics.framework */; };
+		1FF30BF92A6707B000072D57 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF30BF82A6707B000072D57 /* ImageIO.framework */; };
+		1FF30BFC2A67478B00072D57 /* MobileNetV2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1FF30BFB2A67478B00072D57 /* MobileNetV2.mm */; };
+		1FF30C002A67772000072D57 /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 1FF30BFF2A67772000072D57 /* ZipArchive */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FF30BDF2A65E9FF00072D57 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1FF30BE12A65E9FF00072D57 /* ImageClassifierDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ImageClassifierDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF30BE42A65E9FF00072D57 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		1FF30BEC2A65EA4B00072D57 /* tetrart */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = tetrart; path = ..; sourceTree = "<group>"; };
+		1FF30BF02A65EAA200072D57 /* RgbImageTensor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RgbImageTensor.mm; sourceTree = "<group>"; };
+		1FF30BF12A65EAA200072D57 /* RgbImageTensor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RgbImageTensor.hpp; sourceTree = "<group>"; };
+		1FF30BF42A65EDF300072D57 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		1FF30BF62A6707A000072D57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FF30BF82A6707B000072D57 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		1FF30BFA2A67477200072D57 /* MobileNetV2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MobileNetV2.hpp; sourceTree = "<group>"; };
+		1FF30BFB2A67478B00072D57 /* MobileNetV2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MobileNetV2.mm; sourceTree = "<group>"; };
+		1FF30C012A69AE0C00072D57 /* OnScopeExit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OnScopeExit.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FF30BDE2A65E9FF00072D57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF30C002A67772000072D57 /* ZipArchive in Frameworks */,
+				1FF30BF72A6707A000072D57 /* CoreGraphics.framework in Frameworks */,
+				1FF30BF52A65EDF300072D57 /* CoreML.framework in Frameworks */,
+				1FF30BF92A6707B000072D57 /* ImageIO.framework in Frameworks */,
+				1FF30BEF2A65EA5D00072D57 /* TetraRT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FF30BD82A65E9FF00072D57 = {
+			isa = PBXGroup;
+			children = (
+				1FF30BEB2A65EA4B00072D57 /* Packages */,
+				1FF30BE32A65E9FF00072D57 /* Sources */,
+				1FF30BE22A65E9FF00072D57 /* Products */,
+				1FF30BED2A65EA5D00072D57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1FF30BE22A65E9FF00072D57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FF30BE12A65E9FF00072D57 /* ImageClassifierDemo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FF30BE32A65E9FF00072D57 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1FF30BFD2A6771D200072D57 /* Utils */,
+				1FF30BE42A65E9FF00072D57 /* main.mm */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1FF30BEB2A65EA4B00072D57 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1FF30BEC2A65EA4B00072D57 /* tetrart */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1FF30BED2A65EA5D00072D57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FF30BF82A6707B000072D57 /* ImageIO.framework */,
+				1FF30BF62A6707A000072D57 /* CoreGraphics.framework */,
+				1FF30BF42A65EDF300072D57 /* CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FF30BFD2A6771D200072D57 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1FF30BFA2A67477200072D57 /* MobileNetV2.hpp */,
+				1FF30BFB2A67478B00072D57 /* MobileNetV2.mm */,
+				1FF30C012A69AE0C00072D57 /* OnScopeExit.hpp */,
+				1FF30BF12A65EAA200072D57 /* RgbImageTensor.hpp */,
+				1FF30BF02A65EAA200072D57 /* RgbImageTensor.mm */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FF30BE02A65E9FF00072D57 /* ImageClassifierDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF30BE82A65E9FF00072D57 /* Build configuration list for PBXNativeTarget "ImageClassifierDemo" */;
+			buildPhases = (
+				1FF30BDD2A65E9FF00072D57 /* Sources */,
+				1FF30BDE2A65E9FF00072D57 /* Frameworks */,
+				1FF30BDF2A65E9FF00072D57 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageClassifierDemo;
+			packageProductDependencies = (
+				1FF30BEE2A65EA5D00072D57 /* TetraRT */,
+				1FF30BFF2A67772000072D57 /* ZipArchive */,
+			);
+			productName = ImageClassifierDemo;
+			productReference = 1FF30BE12A65E9FF00072D57 /* ImageClassifierDemo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FF30BD92A65E9FF00072D57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1FF30BE02A65E9FF00072D57 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1FF30BDC2A65E9FF00072D57 /* Build configuration list for PBXProject "ImageClassifierDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FF30BD82A65E9FF00072D57;
+			packageReferences = (
+				1FF30BFE2A67772000072D57 /* XCRemoteSwiftPackageReference "ZipArchive" */,
+			);
+			productRefGroup = 1FF30BE22A65E9FF00072D57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FF30BE02A65E9FF00072D57 /* ImageClassifierDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FF30BDD2A65E9FF00072D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF30BFC2A67478B00072D57 /* MobileNetV2.mm in Sources */,
+				1FF30BF22A65EAA200072D57 /* RgbImageTensor.mm in Sources */,
+				1FF30BE52A65E9FF00072D57 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1FF30BE62A65E9FF00072D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		1FF30BE72A65E9FF00072D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		1FF30BE92A65E9FF00072D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XWQJHCT5N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Sources";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FF30BEA2A65E9FF00072D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XWQJHCT5N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Sources";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FF30BDC2A65E9FF00072D57 /* Build configuration list for PBXProject "ImageClassifierDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF30BE62A65E9FF00072D57 /* Debug */,
+				1FF30BE72A65E9FF00072D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FF30BE82A65E9FF00072D57 /* Build configuration list for PBXNativeTarget "ImageClassifierDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF30BE92A65E9FF00072D57 /* Debug */,
+				1FF30BEA2A65E9FF00072D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FF30BFE2A67772000072D57 /* XCRemoteSwiftPackageReference "ZipArchive" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZipArchive/ZipArchive";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1FF30BEE2A65EA5D00072D57 /* TetraRT */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TetraRT;
+		};
+		1FF30BFF2A67772000072D57 /* ZipArchive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FF30BFE2A67772000072D57 /* XCRemoteSwiftPackageReference "ZipArchive" */;
+			productName = ZipArchive;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1FF30BD92A65E9FF00072D57 /* Project object */;
+}
