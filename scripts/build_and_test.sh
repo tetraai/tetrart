@@ -8,7 +8,9 @@ function __cleanup()
     test "${#__cleanup_dirs[@]}" -eq 0 && return
 
     for d in "${__cleanup_dirs[@]}"; do
-        test -d "${d}" && rm -fr "${d}"
+        if [ -d "${d}" ]; then
+            rm -fr "${d}"
+        fi
     done
 }
 
@@ -17,7 +19,6 @@ function __smoke_test()
 {
     pushd "${REPO_ROOT}" > /dev/null
     echo "=== Running SmokeTest ==="
-    __cleanup_dirs+=("${PWD}/build")
     swift run -c release SmokeTest
     popd > /dev/null
 }
@@ -28,7 +29,7 @@ function __image_classifier_demo()
     echo "=== Building ImageClassifierDemo ==="
 
     local tempdir=$(mktemp -d -t ImageClassifierDemoRoot)
-    __cleanup_dirs+=("${tempdir}" "${PWD}/build")
+    __cleanup_dirs+=("${tempdir}" "${REPO_ROOT}/build" "${PWD}/build")
 
     xcodebuild clean
     xcodebuild install -configuration Release -target ImageClassifierDemo DSTROOT="${tempdir}"
@@ -43,7 +44,9 @@ function build_and_test_main()
 {
     trap __cleanup EXIT
     __smoke_test
-    __image_classifier_demo
+
+    # Disabled due to frequent failures caused by https://github.com/apple/swift-package-manager/issues/6705
+    # __image_classifier_demo
 }
 
 function describe_build_env()
