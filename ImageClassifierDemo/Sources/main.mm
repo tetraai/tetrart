@@ -84,7 +84,8 @@ int main(int argc, char* argv[])
         // Perform inference
         model->Run();
 
-        // Retrieve results
+        // Retrieve results. Individual outputs can also be retrieved with
+        // GetOutputMLFeatureValue().
         id<MLFeatureProvider> outputs = model->GetOutputProvider();
 
         // Do something interesting with inference results.
