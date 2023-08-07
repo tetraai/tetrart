@@ -14,8 +14,8 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "TetraRT",
-                      url: "https://tetra-release.s3.us-west-2.amazonaws.com/TetraRT/apple/TetraRT.xcframework-0.2.0.zip",
-                      checksum: "dffa329feae37828f1695b69dcd535ca4ca198f687ab96a46bba56e0425f6829"),
+                      url: "https://tetra-release.s3.us-west-2.amazonaws.com/TetraRT/apple/TetraRT.xcframework-0.3.0.zip",
+                      checksum: "1e1be1735b0e0a9c1d09250c829cd95637a789dbe0cc9d3bbd567bc9bc6b95cf"),
 
         .executableTarget(name: "SmokeTest", dependencies: [.byName(name: "TetraRT")])
     ],
