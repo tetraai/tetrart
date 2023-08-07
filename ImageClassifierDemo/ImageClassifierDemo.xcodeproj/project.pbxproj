@@ -30,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FEB0A712A8177F200428BD1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1FF30BE12A65E9FF00072D57 /* ImageClassifierDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ImageClassifierDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF30BE42A65E9FF00072D57 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		1FF30BEC2A65EA4B00072D57 /* tetrart */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = tetrart; path = ..; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		1FF30BD82A65E9FF00072D57 = {
 			isa = PBXGroup;
 			children = (
+				1FEB0A712A8177F200428BD1 /* README.md */,
 				1FF30BEB2A65EA4B00072D57 /* Packages */,
 				1FF30BE32A65E9FF00072D57 /* Sources */,
 				1FF30BE22A65E9FF00072D57 /* Products */,
