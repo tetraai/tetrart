@@ -1,4 +1,4 @@
-# TetraRT
+# Tetra Runtime
 
 [![PR Workflow](https://github.com/tetraai/tetrart/actions/workflows/main.yml/badge.svg)](https://github.com/tetraai/tetrart/actions/workflows/main.yml)
 
